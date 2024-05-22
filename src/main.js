@@ -106,7 +106,7 @@ function smoothScroll() {
       cardHeight = rect.height;
     }
     window.scrollBy({
-      top: cardHeight * 3,
+      top: cardHeight * 4,
       behavior: 'smooth',
     });
   }
