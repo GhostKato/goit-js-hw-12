@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-app-template",
+  "name": "goit-js-hw-12",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "css-loader": "^7.1.1",
     "glob": "^8.1.0",
     "vite": "^4.5.2"
   },
   "author": "Maksym Osadchenko <osadchenko.maksym@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "css-loader": "^7.1.1",
+    "axios": "^1.6.8",
     "izitoast": "^1.4.0",
     "simplelightbox": "^2.14.3",
     "vite-plugin-full-reload": "^1.0.5",

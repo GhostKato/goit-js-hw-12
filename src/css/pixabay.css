@@ -1,11 +1,13 @@
-.form {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+form {
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding: 32px;
+  margin: 32px;
 }
 
-.input-search {
+form > input {
   width: 272px;
   height: 40px;
   flex-shrink: 0;
@@ -21,24 +23,26 @@
   line-height: 24px;
   letter-spacing: 0.64px;
   margin-bottom: 16px;
-
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-.input-search:hover {
+form > input:hover {
   border-color: #000;
-
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
 
-.input-search:active {
+form > input:active {
   border-color: #4e75ff;
   transform: translateY(1px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form > button {
+  width: 75px;
 }
 
 button {
@@ -96,42 +100,30 @@ button span {
   z-index: 1;
 }
 
+.load-more {
+  width: 124px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+
+/* //////////////////////////////////////////////////// */
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
+  margin-bottom: 32px;
   width: 1440px;
-  margin: 0 auto;
-  margin-bottom: 36px;
 }
 
-.card {
-  list-style: none;
-  border: 1px solid #ccc;
+.gallery-item {
   width: 360px;
   height: 200px;
-  transition: transform 0.3s ease;
-  border-bottom: none;
-}
-
-.card:hover {
-  transform: scale(105%);
-}
-
-.place-for-image {
-  height: 152px;
-  width: 360px;
+  border: 1px solid #808080;
   overflow: hidden;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.info-text {
+.image-info {
   display: flex;
   gap: 36px;
   justify-content: center;
@@ -163,3 +155,23 @@ img {
   height: 48px;
   background-color: #fff;
 }
+
+/* .gallery-link {
+  display: block;
+  text-decoration: none;
+} */
+
+/* .gallery-link img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-info {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
